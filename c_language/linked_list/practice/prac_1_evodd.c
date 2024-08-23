@@ -42,23 +42,23 @@ int count(struct node *n)
 
 struct node *set_evodd(struct node *head)
 {
-
-    struct node *ptr;
-    ptr = (struct node *)malloc(sizeof(struct node));
-    ptr = head ;
-
-    struct node *head1;
-    head1 = (struct node *)malloc(sizeof(struct node));
-    struct node *ptr1;
-    ptr1 = (struct node *)malloc(sizeof(struct node));
-    head1 = head->next;
-    ptr1 = head1 ->next;
-
-    while (/* condition */)
+    if (head == NULL || head->next == NULL)
     {
-        /* code */
+        return head;
+    }
+    struct node *ptr = head;
+    struct node *ptr1 = head->next;
+    struct node *head1 = ptr1;
+
+    while (ptr1 != NULL && ptr1->next != NULL)
+    {
+        ptr->next = ptr1->next;
+        ptr = ptr1->next;
+        ptr1->next = ptr->next;
+        ptr1 = ptr->next;
     }
 
+    ptr->next = head1;
     return head;
 }
 int main()
@@ -91,6 +91,10 @@ int main()
 
     head = add_first_node(head, 13);
 
+    printf("Count of nodes after adding: %d\n", count(head));
+    print_ll(head);
+
+    head = set_evodd(head);
     printf("Count of nodes after adding: %d\n", count(head));
     print_ll(head);
 
