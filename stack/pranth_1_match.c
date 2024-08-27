@@ -85,7 +85,7 @@ int parenthesisMatch(char * exp){
 }
 int main()
 {
-    char * exp = "{(8)(9))";
+    char * exp = ")(";
     if(parenthesisMatch(exp)){
         printf("The parenthesis is matching");
     }

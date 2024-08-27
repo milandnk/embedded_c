@@ -82,7 +82,6 @@
 //     dequeue(q);
 //     print_q(q);
 
-
 //     return 0;
 // }
 #include <stdio.h>
@@ -129,13 +128,13 @@ int dequeue(struct queue *q)
 
 void print_q(struct queue *q)
 {
-    for (int i = q->f+1; i <= q->r; i++)
+    for (int i = q->f + 1; i <= q->r; i++)
     {
         printf("%d\t", q->arr[i]);
     }
     printf("\n");
 }
-void enqueue(struct queue *q , int val)
+void enqueue(struct queue *q, int val)
 {
     if (is_full(q))
     {
@@ -156,19 +155,29 @@ int main()
     q.r = -1;
     q.arr = (int *)malloc(q.size * sizeof(int));
 
-    enqueue(&q , 5);
-    print_q(&q);
-    enqueue(&q , 7);
-    print_q(&q);
-    enqueue(&q , 6);
-    print_q(&q);
-    enqueue(&q , 4);
-    print_q(&q);
-    enqueue(&q , 3);
-    print_q(&q);
-    dequeue(&q);
-    print_q(&q);
-
-
+    int val, n;
+    while (1)
+    {
+        printf("Enter 1 to enqueue, 2 to dequeue, 3 to exit: ");
+        scanf("%d", &n);
+        switch (n)
+        {
+        case 1:
+            printf("Enter value data: ");
+            scanf("%d", &val);
+            enqueue(&q, val);
+            print_q(&q);
+            break;
+        case 2:
+            dequeue(&q);
+            print_q(&q);
+            break;
+        case 3:
+            exit(0);
+            break;
+        default:
+            break;
+        }
+    }
     return 0;
 }

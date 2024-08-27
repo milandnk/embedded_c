@@ -72,13 +72,21 @@ int parenthesisMatch(char *exp)
         {
             if (isEmpty(sp))
             {
+                free(sp->arr);
+                free(sp);
                 return 0;
             }
             char pop_ch = pop(sp);
-            if (!match(sp->arr[sp->top], pop_ch))
+            if (!match(pop_ch, exp[i]))
             {
+                free(sp->arr);
+                free(sp);
                 return 0;
             }
+        }
+        else
+        {
+            continue;
         }
     }
     return isEmpty(sp);
