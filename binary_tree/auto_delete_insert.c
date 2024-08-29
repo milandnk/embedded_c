@@ -51,7 +51,62 @@ int is_bst(struct node *root)
     return is_bst_util(root, &prev);
 }
 
-struct node* delete(struct node *root, int key)
+struct node *inorderpredesseor(struct node *root)
+{
+    root = root->left;
+    while (root->right != NULL)
+    {
+        root = root->right;
+    }
+    return root;
+}
+struct node *inorder_predessor(struct node *root)
+{
+    struct node *current = root->left;
+    while (current && current->right != NULL)
+    {
+        current = current->right;
+    }
+    return current;
+}
+
+struct node *delete(struct node *root, int val)
+{
+    if (root == NULL)
+    {
+        return NULL;
+    }
+
+    if (val < root->data)
+    {
+        root->left = delete (root->left, val);
+    }
+    else if (val > root->data)
+    {
+        root->right = delete (root->right, val);
+    }
+    else
+    {
+        if (root->left == NULL)
+        {
+            struct node *temp = root->right;
+            free(root);
+            return temp;
+        }
+        else if (root->right == NULL)
+        {
+            struct node *temp = root->left;
+            free(root);
+            return temp;
+        }
+        struct node *ipre = inorder_predessor(root);
+        root->data = ipre->data;
+        root->left = delete (root->left, ipre->data);
+    }
+
+    return root;
+}
+void insert(struct node *root, int key)
 {
     struct node *prev = NULL;
     while (root != NULL)
@@ -84,7 +139,7 @@ struct node* delete(struct node *root, int key)
 
 int main()
 {
-    int val;
+    int val, n;
     struct node *p = create_node(4);
     struct node *p1 = create_node(2);
     struct node *p2 = create_node(1);
@@ -107,13 +162,33 @@ int main()
     {
         printf("This is not a BST!!\n");
     }
-
-    printf("Enter value to insert: ");
-    scanf("%d", &val);
-    insert(p, val);
-    in_order(p);
-    printf("\n");
-
+    while (1)
+    {
+        printf("Enter value to insert(1),delete(2),exit(3): ");
+        scanf("%d", &n);
+        switch (n)
+        {
+        case 1:
+            printf("Enter value to insert: ");
+            scanf("%d", &val);
+            insert(p, val);
+            in_order(p);
+            printf("\n");
+            break;
+        case 2:
+            printf("Enter value to delete: ");
+            scanf("%d", &val);
+            delete (p, val);
+            in_order(p);
+            printf("\n");
+            break;
+        case 3:
+            exit(1);
+        default:
+            printf("not valid please resend the number");
+            break;
+        }
+    }
     free(p);
     free(p1);
     free(p2);

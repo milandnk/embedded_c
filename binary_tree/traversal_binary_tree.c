@@ -24,7 +24,6 @@ void pre_order(struct node *root){
         pre_order(root->left);
         pre_order(root->right);
     }
-    
 }
 void post_order(struct node *root){
     if(root != NULL){
