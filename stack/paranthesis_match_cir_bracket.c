@@ -55,7 +55,6 @@ char pop(struct stack* ptr){
 }
  
 int parenthesisMatch(char * exp){
-    // Create and initialize the stack
     struct stack* sp;
     sp->size = 100;
     sp->top = -1;
