@@ -1,3 +1,5 @@
+//this is basic function of creationof queue
+
 // #include <stdio.h>
 // #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+//this function is usefull for enqueue and dequeue and traversal
+
 #include <stdio.h>
 #include <stdlib.h>
 

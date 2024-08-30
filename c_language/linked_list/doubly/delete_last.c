@@ -1,3 +1,5 @@
+//this code is usefull for add node at last position
+
 #include <stdio.h>
 #include <stdlib.h>
 

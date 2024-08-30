@@ -1,3 +1,5 @@
+//this is a function of peak,pop,push using structure and linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

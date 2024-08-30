@@ -1,3 +1,5 @@
+//tis code is usefull for inorder,preorder and post order traversal
+
 #include <stdio.h>
 #include <stdlib.h>
 

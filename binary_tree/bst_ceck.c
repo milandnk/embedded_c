@@ -1,3 +1,5 @@
+//in this program is helping to find given tree is bst or not
+
 #include <stdio.h>
 #include <stdlib.h>
 

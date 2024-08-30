@@ -1,3 +1,5 @@
+//tis code is usefull for create doubly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

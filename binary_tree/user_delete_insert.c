@@ -1,3 +1,7 @@
+//this is a final program 
+//in this program we have create a tree using user data
+//insertion and deletion process was also done
+
 #include <stdio.h>
 #include <stdlib.h>
 

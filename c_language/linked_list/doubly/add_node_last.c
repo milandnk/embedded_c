@@ -1,3 +1,5 @@
+//add node at last in given linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

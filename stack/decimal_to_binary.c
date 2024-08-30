@@ -1,3 +1,6 @@
+//this code is usefull of decimal to binary conversion
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

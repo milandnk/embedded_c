@@ -1,3 +1,6 @@
+//this is a function of peak,pop,push using array
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

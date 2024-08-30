@@ -1,3 +1,5 @@
+//in this code is use for create a node
+
 #include <stdio.h>
 #include <stdlib.h>
 

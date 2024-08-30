@@ -1,3 +1,5 @@
+//this codeis use for even odd seperation in singly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

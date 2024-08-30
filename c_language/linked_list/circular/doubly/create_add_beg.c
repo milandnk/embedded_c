@@ -1,3 +1,6 @@
+//this is main program
+//add node
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+//this program is count to howmany node available in linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

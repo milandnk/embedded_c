@@ -1,3 +1,5 @@
+//this function is usefull for insert value auto
+
 #include <stdio.h>
 #include <stdlib.h>
 

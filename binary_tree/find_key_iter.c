@@ -1,3 +1,5 @@
+//in this code is usefull for find a key using iteration and not use of recursion
+
 #include <stdio.h>
 #include <stdlib.h>
 

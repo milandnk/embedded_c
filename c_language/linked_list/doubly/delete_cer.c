@@ -1,3 +1,5 @@
+//this code is usefull for delete node in certain position
+
 #include <stdio.h>
 #include <stdlib.h>
 

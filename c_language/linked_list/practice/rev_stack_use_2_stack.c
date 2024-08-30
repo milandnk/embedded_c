@@ -1,3 +1,6 @@
+//this code is usefull for reverse stack using 3 stack
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

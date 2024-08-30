@@ -1,3 +1,5 @@
+//this code is usefull for reverse whole doubly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

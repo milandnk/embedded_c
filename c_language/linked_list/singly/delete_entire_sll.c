@@ -1,3 +1,5 @@
+//this program is represent the deletion of entire singly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

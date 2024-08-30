@@ -1,3 +1,5 @@
+//find some value of given node in which position
+
 #include <stdio.h>
 #include <stdlib.h>
 

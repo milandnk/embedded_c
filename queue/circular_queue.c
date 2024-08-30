@@ -1,3 +1,7 @@
+//this code is usefull for all function using structure
+//isfuull,isempty,enqueue and dequeue
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

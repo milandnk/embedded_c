@@ -1,3 +1,5 @@
+//this code is represnt the addition of node at certaain position
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+//in this function is usefull for find the key using recusion 
+
 #include <stdio.h>
 #include <stdlib.h>
 

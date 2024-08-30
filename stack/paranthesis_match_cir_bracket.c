@@ -1,3 +1,5 @@
+//this code is usefull for paranthesis matchinbg ingiven expression  bracket ()
+
 #include <stdio.h>
 #include <stdlib.h>
  

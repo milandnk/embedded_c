@@ -1,3 +1,6 @@
+//this code of double ended queue 
+//it has various functionality like init,insertion and deletion from both end
+
 #include <stdio.h>
 #include <stdlib.h>
 

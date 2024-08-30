@@ -1,3 +1,5 @@
+//this code is represent the delition of first node of singly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+//delete node at first position
+
 #include <stdio.h>
 #include <stdlib.h>
 

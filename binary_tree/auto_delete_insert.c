@@ -1,3 +1,7 @@
+//in this code explain create node,delete and insert function
+//in insert function data auto matic set using bst and their value
+//in delete function value will be delete ....
+
 #include <stdio.h>
 #include <stdlib.h>
 

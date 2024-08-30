@@ -1,3 +1,6 @@
+//this is a final code 
+//it has deletion,insertion and traversal proscess is done
+
 #include <stdio.h>
 #include <stdlib.h>
 

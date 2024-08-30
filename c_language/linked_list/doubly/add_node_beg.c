@@ -1,3 +1,5 @@
+//add node at beg at given doubly linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 

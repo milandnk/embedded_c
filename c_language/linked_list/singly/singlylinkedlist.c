@@ -1,3 +1,5 @@
+//this is a function of traversal
+
 #include <stdio.h>
 #include <stdlib.h>
 

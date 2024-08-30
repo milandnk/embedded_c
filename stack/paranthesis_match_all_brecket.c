@@ -1,3 +1,6 @@
+//this code is usefull for paranthesis matchinbg ingiven expression all bracket ({}[])
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
