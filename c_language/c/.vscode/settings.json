@@ -1,0 +1,26 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stdio.h": "c",
+        "_92.C": "cpp",
+        "string.h": "c",
+        "functional": "c",
+        "sstream": "c"
+    },
+    "cSpell.words": [
+        "abcdcba",
+        "boundry",
+        "celcious",
+        "fahranhit",
+        "fibo",
+        "hexnum",
+        "intrest",
+        "lstr",
+        "milaan",
+        "milanpikaliya",
+        "milanpipalika",
+        "pipaliya",
+        "pipliya",
+        "rameshbhai"
+    ]
+}
