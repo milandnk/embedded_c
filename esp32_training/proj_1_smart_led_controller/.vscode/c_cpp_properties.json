@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Espressif/**"
+            ],
+            "defines": [
+                "ESP_PLATFORM",
+                "ESP32"
+            ],
+            "compilerPath": "C:/Espressif/frameworks/esp-idf-v5.2.1/build/**", 
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
